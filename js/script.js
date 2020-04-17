@@ -18,6 +18,7 @@ function stop() {
     video.currentTime = 0;
 }
 
+//таймер
 $(document).ready(function(){
   $("#movie").on(
     "timeupdate", 
