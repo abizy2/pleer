@@ -1,15 +1,19 @@
-	var playbutton;
-	window.addEventListener('load', function() {
-	playbutton = document.getElementById('videopleer').play();
-	videopleer = document.getElementById ('videopleer');
-	playbutton.addEventListener ('click', playOfPause, false);
-	
-}, false);
+var video;
+var display;
 
-function playOfPause() {
-	if (videopleer.paused) {
-		videopleer.play();
-	} else {
-		videopleer.pause ();
-	}
+window.onload = function() {
+	video = document.getElementById('movie');
+};
+
+function play() {
+    video.play();
+}
+
+function pause() {
+    video.pause();
+}
+
+function stop() {
+    video.pause();
+    video.currentTime = 0;
 }

@@ -8,7 +8,7 @@
 <div id="videopleer">
 
 	<div id="videotree">
-		<video poster="images/back.jpg" width="400" height="400"controls>
+		<video id="movie" controls poster = "images/back.jpg" width="400" height="400">
 			<source src="video/sea.mp4" type="video/mp4"
 		</video>
 	</div>
@@ -20,11 +20,9 @@
 	<div id="timefactor"> 0:00/0:00  </div>
 
 	<div id="buttontree">
-		<button id="playbutton"> <img src="images/play.png" width="70" height="50"/></button>
-		
-		<button id="playbutton"> <img id="backwardbutton" src="images/backward.png" width="70" height="50"></button>
-		
-		<button id="forwardbutton"> <img src="images/forward.png" width="70" height="50"> </button>
+		<button onclick="play()"> <img src="images/play.png" width="70" height="50" play /> </button>
+		<button onclick="pause()"> <img src="images/pause.png" width="70" height="50" pause/> </button>
+		<button onclick="stop()"> <img src="images/backward.png" width="70" height="50" stop/> </button>
 	</div>
 
 
