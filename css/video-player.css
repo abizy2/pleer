@@ -16,8 +16,8 @@ img{
 #progresstree {
 	background-color: CadetBlue;
 }
-#progress {
-		width:5px;
-	height:50%;
-background-color : black
+            
+#time {
+    color:#000000;
+    font-size:13pt;
 }
