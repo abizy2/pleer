@@ -1,5 +1,4 @@
 var video;
-var display;
 
 window.onload = function() {
 	video = document.getElementById('movie');
