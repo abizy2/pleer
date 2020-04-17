@@ -1,5 +1,4 @@
-var video;
-
+var video, currentTime, duration;
 
 window.onload = function() {
 	video = document.getElementById('movie');
@@ -18,9 +17,10 @@ function stop() {
     video.currentTime = 0;
 }
 
+
 //таймер
-$(document).ready(function(){
-  $("#movie").on(
+document.addEventListener('DOMContentLoaded',function(){
+  movie.on(
     "timeupdate", 
     function(event){
       onTrackedVideoFrame(this.currentTime, this.duration);
